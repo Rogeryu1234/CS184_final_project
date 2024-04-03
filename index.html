@@ -102,19 +102,38 @@
             </tr>
             <tr>
                 <td>Week 1</td>
-                <td>Research and gather reference materials</td>
+                <td>
+                    Starting to research rendering techniques for gaseous motion so we can begin implementation,
+                    and create a template environment for our render.
+                    This environment should include a light source (the sun) and the sphere representing Jupiter
+                </td>
             </tr>
             <tr>
                 <td>Week 2</td>
-                <td>Develop 3D model of Jupiter</td>
+                <td>
+                    Implement path tracer with global illumination, using sun as the light source.
+                    We aim to encapsulate the scenery with a large cornell box (faces not in render)
+                    so that we can obtain light reflections illuminating the backsides of Jupiter too.
+                    The environment should now have a glowing sun (bright point light) and illuminated
+                    Jupiter with correct surface texture.
+                </td>
             </tr>
             <tr>
                 <td>Week 3</td>
-                <td>Implement weather effects and user controls</td>
+                <td>
+                    Implement dynamic gaseous surface on Jupiter such that by the end of the week, we will have a 
+                    functional dynamic texture on Jupiter's surface that mimics gaseous motion on the planet.
+                    Currently planning to use shaders that can be updated in runtime with respect to time, that
+                    modifies the rendering. Alternatively, we can implement this using spring movement and render
+                    the surface by mapping the uv coordinates on texture to each point mass.
+                </td>
             </tr>
             <tr>
                 <td>Week 4</td>
-                <td>Optimize performance and finalize project</td>
+                <td>
+                    Final performance optimization and finalize report. By the end of this week, we will produce 
+                    the set of renders for our report and produce the video demonstration.
+                </td>
             </tr>
         </table>
     </section>

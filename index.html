@@ -76,8 +76,8 @@
         <p>The problem of simulating Juipter using computer graphics techniques is difficult due to the complexities of the original model itself. Considering 
             the size of the model along with how light sources of the sun interact with it reqiures to consider how we (re-)build our ray tracer similar to the
             assignment of homework 3. This grows in complexity when we add on the ability for weather effects such as cloud formations (an important factor considering its 
-            known as the gas giant), storms, and its interactions with light sources. This builds up to our most difficult task: (1) having that interaction between weather effects and light sources
-            and (2) having users interact with it. As for how we are going to solve it, going into research of graphics is going to be a great start especially since things
+            known as the gas giant), storms, and its interactions with light sources. This builds up to our most difficult task: (1) using shaders to build juipters enviroment
+            and (2) having that interaction between weather effects and light sources. As for how we are going to solve it, going into research of graphics is going to be a great start especially since things
             such as fog (similar to clouds) is something with readily aviable research, along with sticking to the timeline.
         </p>
     </section>
@@ -85,10 +85,13 @@
         <h2>Goals and Deliverables</h2>
         <h3>Baseline Plan</h3>
         <ul>
-            <li>Create a 3D model of Jupiter's surface and atmosphere through texture mapping.</li>
-            <li>Implement realistic weather effects such as cloud formations and storms.</li>
-            <li>Develop user controls for interacting(Light sources, etc) with the simulation.</li>
-            <li>Evaluate performance and optimize for smooth rendering.</li>
+            <li>Implement Jupiter with the correct textures applied (this should contain an artifact as a photo)</li>
+            <li>Implement a path tracer with global illumination using the sun as a light source while maintaing juipter's texture</li>
+            <li>The last point should be able to provide picture of juipter and can be used as an artifact</li>
+            <li>Implement Juipter's gaseous enviroment and clouds with motion using shaders </li>
+            <li>This should have a video artifact showing it.</li>
+            <li>Maintain the light source while having it interact with juipter's enviroment </li>
+            <li>Maintain a reasonable preformance such as it taking around an hour to create and artifact</li>
         </ul>
         <h3>Aspirational Plan</h3>
         <ul>

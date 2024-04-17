@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter Simulation Project Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #9cc7f2;
+        }
+        header {
+            background-color: rgb(253, 169, 253);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        h1, h2, h3 {
+            color: #343a40;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jupiter Simulation Project Milestone</h1>
+        <p>Team Members: Zhenbang (Roger) Yu, Hanze (David) Tan, Jerry Li, Angel Aldaco</p>
+    </header>
+    <section id="summary">
+        <h2>Accomplishments</h2>
+        <p>Two Weeks into our project our major completed tasks inculde rendering a static model Juipter in a fixed rotation.
+            This is accomplished starting with the ray tracing homework as that was deemed to be an apprioprate starting point for 
+            the project given we were dealing with how light interacts with the model. So we made a Collada model of a sphere and placed it for rendering.
+            After we accomplished that we placed a static texture on the sphere to represent juipter, and placed a light source to see how it interacts with the light there, as a major idea for our project was interacting with the sun.
+            We can also apply rotation to the sphere over time. The following image is reflecting that progress.  
+        </p>
+    
+        <img src="../images/Milestone_Image.png" alt="Jupiter Simulation Image">
+        <h3>Items from Baseline Plan Implemented So Far</h3>
+        <ul>
+            <li>Implement Jupiter with the correct textures applied (this should contain an artifact as a photo)</li>
+            <li>Implement a path tracer with global illumination using the sun as a light source while maintaing juipter's texture</li>
+            <li>The last point should be able to provide picture of juipter and can be used as an artifact</li>
+        </ul>
+        <h3>Items from Baseline Plan To Be Implemented</h3>
+        <ul>
+            <li>Implement Juipter's gaseous enviroment and clouds with motion using shaders </li>
+            <li>This should have a video artifact showing it.</li>
+            <li>Maintain the light source while having it interact with Jupiter's environment </li>
+            <li>Maintain a reasonable preformance such as it taking around an hour to create and artifact</li>
+        </ul>
+    </section>
+    <section id="Reflection">
+        <h2>Reflection and Schedule Moving Forward</h2>
+        <p>Progress thus far has been as we expected. Which is great because it indicates that we are running on schedule. So we currently have no plans
+            to change the plan moving forward given that we have met our original goals. So this week we plan to move ahead with simulating weather! But we acknowedge that
+            this is probably a harder task than the previous tasks. So we are carefully optimistic for our progress into the future deliverables with regards to timing. But given we 
+            have been able to keep up thus far, and given that we expect to dedicate more time to this coming forward we are hopeful to accomplish one of the reach goals such as self rotation. 
+        </p>
+    </section>
+</body>
+</html>

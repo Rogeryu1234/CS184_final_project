@@ -103,7 +103,8 @@
         </p>
         <img src="../images/saveimage.png" alt="Jupiter In Orbit Simulation Image">
         <p> 
-            You may have noticed that the last photo had some light implemented and that's because it is! We take into consideration the positon which the planet is in and place that as in input into the shader! Then we calculate the position relative to the center of gravity which in this case in this case is the sun. 
+            You may have noticed that the last photo had some light implemented and that's because it is! We take into consideration the positon which the planet is in and place that as in input into the shader! Then we calculate the position relative to the center of gravity which in this case in this case is the sun which is centered at the 0 position.
+            We then can go ahead and to find the distance by doing a simple subtraction operation. And we can find where it is coming from by normalizing the difference between the two. Thus it gives us the diffuse.
             Then from there we can calculate the diffuse strength of the light and apply it to the texture! This is something that also updates through it's animation. This can be seen here: 
         </p>
 

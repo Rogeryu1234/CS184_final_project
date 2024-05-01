@@ -102,6 +102,14 @@
             Aka using z = radius * cos(curr_angle) and x = radius * sin(curr_angle) as the new position which we just use a standard rotation matrix for. This is what we used for continous animation around the sun and simulating the orbit. Thus giving us the following iamge:
         </p>
         <img src="../images/saveimage.png" alt="Jupiter In Orbit Simulation Image">
+        <p> 
+            You may have noticed that the last photo had some light implemented and that's because it is! We take into consideration the positon which the planet is in and place that as in input into the shader! Then we calculate the position relative to the center of gravity which in this case in this case is the sun. 
+            Then from there we can calculate the diffuse strength of the light and apply it to the texture! This is something that also updates through it's animation. This can be seen here: 
+        </p>
+
+        <video width="320" height="240" autoplay muted>
+            <source src="../images/SolarSystem.mp4" type="video/mp4">
+        </video>
 
     </section>
 </body>

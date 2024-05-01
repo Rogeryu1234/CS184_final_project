@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter Simulation Project Final Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #9cc7f2;
+        }
+        header {
+            background-color: rgb(253, 169, 253);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        h1, h2, h3 {
+            color: #343a40;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jupiter Simulation Project Final Report</h1>
+        <p>Team Members: Zhenbang (Roger) Yu, Hanze (David) Tan, Jerry Li, Angel Aldaco</p>
+    </header>
+    <!-- <a href="https://docs.google.com/presentation/d/1WllpUyrVDwhcDkwSuZu90dJWHrJEesQn7eGq3tC2hMU/edit?usp=sharing">Looking for the Milestone Slides? Click Here!</a> -->
+    <!-- <a href="">Looking for the Milestone Video? Click Here!</a> -->
+    <section id="Abstract">
+        <h2>Abstract</h2>
+        <p>The goal of this project was to implement a simulation of Juipter with the Sun. This involves the creation of a skybox for stars in the solar system,
+            the creation of the sun, and the creation of juipter. This inculdes having juipter have rotation around the sun along with supporting self rotation. This also builds on 
+            the concept of ray tracing for the light source affecting the planet itself. 
+        </p>
+    
+        <!-- <img src="../images/Milestone_Image.png" alt="Jupiter Simulation Image">
+        <h3>Items from Baseline Plan Implemented So Far</h3>
+        <ul>
+            <li>Implement Jupiter with the correct textures applied (this should contain an artifact as a photo)</li>
+            <li>Implement a path tracer with global illumination using the sun as a light source while maintaing juipter's texture</li>
+            <li>The last point should be able to provide picture of juipter and can be used as an artifact</li>
+        </ul>
+        <h3>Items from Baseline Plan To Be Implemented</h3>
+        <ul>
+            <li>Implement Juipter's gaseous enviroment and clouds with motion using shaders </li>
+            <li>This should have a video artifact showing it.</li>
+            <li>Maintain the light source while having it interact with Jupiter's environment </li>
+            <li>Maintain a reasonable preformance such as it taking around an hour to create and artifact</li>
+        </ul> -->
+    </section>
+    <section id="Methods">
+        <h2>Methods</h2>
+        <p> We began the project using Homework 3, Ray Tracing as the starting position. This means that the first direct goal was to render a 
+            a sphere along with a basic texture. This took a bit of time to run, perhaps due to our machines being a bit behind the times or it being
+            somewhat clunky. We then got the following photo:   
+        </p>
+        <img src="../images/Milestone_Image.png" alt="Jupiter Simulation Image">
+        <p> We were pretty satisfied with how the light was hitting the planet with global illumination, and the ray tracing algorithms from homework. From that, 
+            we got feedback for background being a little unintersting to see giving us the idea to go ahead and start on a background. But we then began to realize that
+            the pre-existing homework was a little clunky if we wanted to move to blender. So we kind of had to rebuild it for the latest verision of blender. This time around we
+            decided to have a background of space to solve for this issue! As it felt relatively apprioprate. Now we had to implement the orbit and physics of the gravitional pull. 
+            This meant programming the orbit which was standard for the sun (because it was the center of it! It doesn't have to move!). But then we moved on to the physics of juipter which is dealing with the unit circle equations!
+            Aka using z = radius * cos(curr_angle) and x = radius * sin(curr_angle) as the new position which we just use a standard rotation matrix for.    
+        </p>
+
+
+    </section>
+</body>
+</html>
